@@ -1,0 +1,139 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Lunar Lander Simulation</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+  
+    <!-- =======================================================
+    * Template Name: Personal - v2.2.0
+    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+  <body data-gr-c-s-loaded="true">
+  
+    <!-- ======= Portfolio Details ======= -->
+      <main id="main">
+        <div id="portfolio-details" class="portfolio-details">
+          <div class="container">
+    
+            <div class="row">
+    
+              <div class="col-lg-12 portfolio-info">
+                <br>
+                <h2 style="color:#12d640">Comparision of Different SLAM Techniques</h2>
+                <h5>Oriented FAST and Rotated BRIEF - Simultaneous Localization and Mapping (ORB SLAM)</h5>
+
+                <div style="text-align: center; padding-bottom: 24px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HLMHMgI4NK8?si=WRuJ9llk5pn89UlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+                    </div>
+
+                <p> ORB-SLAM is a well-known SLAM (Simultaneous Localization and Mapping) algorithm in the field of computer vision and robotics.<br>
+
+                  ORB-SLAM (Oriented FAST and Rotated BRIEF - Simultaneous Localization and Mapping) is a versatile and efficient SLAM system for monocular, stereo, and RGB-D cameras. Key points include:<br>
+                  
+                  1. Features: Uses ORB (Oriented FAST and Rotated BRIEF) features, which are computationally efficient and rotation invariant.<br>
+                  
+                  2. Real-time operation: Capable of real-time mapping and localization on standard CPUs.<br>
+                  
+                  3. Loop closing: Implements loop closure detection to correct drift and improve map consistency.<br>
+                  
+                  4. Relocalization: Able to relocalize the camera in case of tracking failure or when revisiting a place.<br>
+                  
+                  5. Map reuse: Allows saving and loading of maps for future use.<br>
+                  
+                  6. Keyframe-based: Utilizes a keyframe-based approach for mapping and optimization.<br>
+                  
+                  7. Bundle adjustment: Employs local and global bundle adjustment for map optimization.<br>
+                  
+                  8. Versions: Exists in multiple versions, including ORB-SLAM, ORB-SLAM2, and ORB-SLAM3, each with improvements and additional features.<br>
+                  
+                  9. Open-source: The algorithm is open-source, allowing for community contributions and adaptations.<br>
+                  
+                  10. Applications: Widely used in robotics, augmented reality, and autonomous navigation systems.<br><br>
+                  
+                 <b><i>ORB-SLAM represents a significant contribution to the field of visual SLAM, offering a robust and efficient solution for various camera setups and applications.</i></b></p>
+
+                <h5>Large-Scale Direct Monocular (LSD) SLAM</h5>
+
+                    <div style="text-align: center; padding-bottom: 24px;">  
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WMfp7ecXPnQ?si=Nhp37aLTpq0cRWLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+                </div>
+
+                <p>LSD-SLAM (Large-Scale Direct Monocular SLAM) is an innovative approach to Simultaneous Localization and Mapping. LSD-SLAM is a real-time visual SLAM algorithm for monocular cameras<br>
+                  1. Direct Method: Unlike feature-based methods, LSD-SLAM operates directly on image intensities, allowing it to use all information in the image.<br>
+                  
+                  2. Semi-Dense Mapping: Generates semi-dense depth maps, focusing on areas with sufficient gradient.<br>
+                  
+                  3. Large-Scale: Capable of mapping large-scale environments efficiently.<br>
+                  
+                  4. Monocular: Works with a single camera, making it suitable for various applications.<br>
+                  
+                  5. Real-Time Performance: Achieves real-time performance on standard CPUs.<br>
+                  
+                  6. Keyframe Approach: Uses keyframes to represent the world, reducing computational complexity.<br>
+                  
+                  7. Loop Closure: Implements loop closure detection and correction to maintain consistency in large maps.<br>
+                  
+                  8. Scale Estimation: Able to estimate the scale of the environment, which is typically challenging for monocular systems.<br>
+                  
+                  9. Probabilistic Approach: Uses probabilistic depth estimation to handle uncertainty.<br>
+                  
+                  10. Applications: Useful in robotics, augmented reality, and autonomous navigation.<br>
+                  
+                  11. Open Source: The algorithm is open-source, allowing for community contributions and adaptations.<br>
+                  
+                  12. Limitations: May struggle in environments with low texture or rapid motion.<br><br>
+                  
+                  <b><i>LSD-SLAM represented a significant advancement in visual SLAM when introduced, particularly in its ability to create semi-dense maps in real-time using a direct method. It has since influenced many subsequent SLAM approaches.</i></b>
+                  
+                </p>
+
+                <h5>Gaussian Splatting SLAM</h5>
+                <div style="text-align: center; padding-bottom: 24px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DzUyQrOvBzU?si=wMI06etzzoPwu8an" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <p>Gaussian Splatting SLAM (Simultaneous Localization and Mapping) is a novel approach that integrates Gaussian Splatting, a method for efficiently representing 3D environments, with SLAM techniques. Gaussian Splatting involves representing the environment as a set of Gaussian distributions or "splats," which are compact, probabilistic models that describe the appearance and geometry of small regions in space. These splats are typically placed at various points in the environment and collectively provide a dense, continuous representation of the scene.
+
+                  In SLAM, the goal is to build a map of an unknown environment while simultaneously tracking the position of the sensor (often a robot or camera) within that environment. Gaussian Splatting SLAM combines these goals by using the Gaussian splats not only to represent the map but also to assist in localization. The Gaussian splats provide a rich, detailed representation of the environment, which can improve the accuracy of both the mapping and the localization processes.<br><br>
+                  
+                  Key advantages of Gaussian Splatting SLAM include:<br>
+                  
+                  1. <b>Efficiency:</b> The use of Gaussian splats allows for a compact and efficient representation of large-scale environments, which can be crucial for real-time applications.<br>
+                  
+                  2. <b>Detail:</b> Gaussian splats can represent fine details in the environment, improving the quality of the map and the precision of localization.<br>
+                  
+                  3. <b>Robustness:</b> The probabilistic nature of Gaussian splats can provide robustness to noise and uncertainties in the sensor data.<br><br>
+                  
+                 <b><i>Gaussian Splatting SLAM is particularly suited for scenarios where high-resolution, continuous maps are needed, such as in autonomous driving, robotics, and augmented reality. It represents a step forward in combining advanced 3D representation techniques with SLAM methodologies, leading to more accurate and reliable environmental mapping and localization.</i></b> </p>
+
+                 <h5>Conclusion</h5>
+                 <p>In conclusion, Gaussian Splatting proved to be the most effective approach, as demonstrated in the videos. This is due to the superior 3D reconstruction it provides, thanks to the high-quality point cloud data generated by the Structure from Motion (SFM) model. Additionally, we integrated data from the Depth Anything model to achieve seamless localization. Among the three approaches, GS SLAM emerged as the best. Furthermore, we ensured ROS compatibility for all three SLAM methods.</p>
+                 <h5>References</h5>
+                 <ol>
+                  <li>Kerbl et al. (2023) titled 3D Gaussian Splatting for Real-Time Radiance Field Rendering</li>
+                  <li> ORB-SLAM: A Versatile and Accurate Monocular SLAM System (2015)</li>
+                  <li> Engel et al. (2014) LSD-SLAM: Large-Scale Direct Monocular SLAM</li>
+                 </ol>
