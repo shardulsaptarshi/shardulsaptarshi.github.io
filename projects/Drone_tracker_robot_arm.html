@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Tracking Robot Arm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Drone Tracking Robot Arm</h1>
+
+        <h2>Project Overview</h2>
+        <p>The goal of this project was to design and develop a <strong>Drone Tracking Robot Arm</strong> that uses computer vision to track the movement of a drone with onboard ArUco tags. The robot arm, constructed with AX-12A servos and the "Trossen" robot package, repositions itself to continuously point toward the drone. This innovation enhances the ability to record video footage of fast-moving objects efficiently and safely in various industrial and operational scenarios.</p>
+
+        <h2>Impact</h2>
+        <p>This system augments human capability by providing a safer and more efficient method to record fast-moving objects in real-time. It has applications in industrial monitoring, surveillance, and beyond.</p>
+
+        <h2>Future Work</h2>
+        <h3>The Controller</h3>
+        <ul>
+            <li>Further development of the controller is required, specifically tuning the PID gains.</li>
+            <li>Address steady-state error by incorporating an integral term and balancing it with a derivative term to enhance response time, stability, and accuracy.</li>
+        </ul>
+
+        <h3>GPS Integration</h3>
+        <ul>
+            <li>Incorporate GPS tracking to complement camera data for better results.</li>
+            <li>The current system does not include GPS, which would provide an additional layer of accuracy and robustness.</li>
+        </ul>
+
+        <h3>Camera Enhancements</h3>
+        <ul>
+            <li>Integrate optical zoom functionality to improve video quality and tracking precision.</li>
+            <li>Leverage existing code to detect ArUco tag size and map it to the device's optical zoom for enhanced visuals.</li>
+        </ul>
+
+        <h2>Technical Details</h2>
+        <ul>
+            <li>Robot Arm Components: AX-12A servos and Trossen Robotics Kit.</li>
+            <li>Computer Vision: Used OpenCV and ArUco markers for tracking.</li>
+            <li>Control System: Initial implementation of a PID controller for arm movement.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>The <strong>Drone Tracking Robot Arm</strong> lays the groundwork for advanced tracking systems with potential for further optimization and real-world deployment. Enhancements such as improved controller design, GPS integration, and optical zoom will increase its applicability and effectiveness across diverse domains.</p>
+    </div>
+</body>
+</html>

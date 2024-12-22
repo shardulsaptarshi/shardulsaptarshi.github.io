@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Racing Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Drag Racing Project</h1>
+
+        <h2>Project Overview</h2>
+        <p>This project involved designing a <strong>Nonlinear Model Predictive Control (NMPC)</strong> system to maximize the distance traveled by a car in the positive x-direction within a fixed time interval. The task required maintaining stability, staying close to the centerline, and avoiding a predefined obstacle.</p>
+
+        <h2>Key Objectives</h2>
+        <ul>
+            <li><strong>Maximizing Distance:</strong> Ensure the car travels as far as possible in the x-direction within the allotted time.</li>
+            <li><strong>Obstacle Avoidance:</strong> Avoid a static obstacle located at <code>x = 500, y = 0</code>.</li>
+            <li><strong>Maintaining Stability:</strong> Use tire dynamics to ensure the car remains stable and does not lose control.</li>
+        </ul>
+
+        <h2>Car Dynamics</h2>
+        <p>The car's motion was modeled using dynamics equations that accounted for rear and front tire forces, vehicle position, and orientation in world coordinates. These dynamics were discretized using first-order Euler integration for computational efficiency.</p>
+
+        <h2>Modified Tire Model</h2>
+        <p>A modified tire model was introduced to prevent force saturation at high slip angles, which improves optimization during control. This adjustment enhanced the car's ability to make precise and stable maneuvers.</p>
+
+        <h2>Nonlinear Model Predictive Control</h2>
+        <p>The NMPC system calculated an optimal trajectory by balancing multiple objectives, including maximizing traction force, minimizing lateral deviation, and avoiding obstacles. Auxiliary variables were introduced to enforce tire force and friction constraints, ensuring the car's control inputs adhered to physical limits.</p>
+
+        <h2>Outcomes</h2>
+        <ul>
+            <li>Successfully implemented an NMPC controller that allowed the car to avoid obstacles while maintaining stability.</li>
+            <li>Demonstrated the effectiveness of the modified tire model in improving optimization results.</li>
+        </ul>
+
+        <h2>Future Work</h2>
+        <ul>
+            <li>Incorporate additional tracking mechanisms, such as GPS, to improve positional accuracy.</li>
+            <li>Explore advanced tire models to further enhance stability and control under extreme conditions.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>This project demonstrated the potential of NMPC in handling complex vehicle dynamics and constraints. By integrating advanced control strategies, it lays the groundwork for applications in high-performance and autonomous driving systems.</p>
+    </div>
+</body>
+</html>
